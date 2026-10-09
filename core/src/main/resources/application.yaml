@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dropkey
+
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/dropkey}
+    username: ${DB_USERNAME:dropkey}
+    password: ${DB_PASSWORD:dropkey}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate

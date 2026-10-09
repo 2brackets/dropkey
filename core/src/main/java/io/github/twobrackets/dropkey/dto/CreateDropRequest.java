@@ -1,0 +1,14 @@
+package io.github.twobrackets.dropkey.dto;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+
+public record CreateDropRequest(
+        @NotNull
+        @Min(1)
+        @Max(168)
+        Integer expiresInHours,
+        String password
+) {
+}
